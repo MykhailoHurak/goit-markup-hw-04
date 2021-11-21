@@ -31,7 +31,7 @@ ul {
   list-style: none;
 }
 
-/* ШАПКА --------------------------- */
+/* HEADER (ШАПКА) --------------------------- */
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -123,6 +123,20 @@ ul {
   color: var(--color-accent);
 }
 
+.contacts-icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contacts-icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* СЕКЦИЯ 1 HERO (ГЛАВНЫЙ ЭКРАН) --------------------*/
 
 .section {
@@ -135,6 +149,16 @@ ul {
   background: var(--color-hero-footer);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.hero-background {
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -202,6 +226,20 @@ ul {
 
 .advantage-item:last-child {
   margin-right: 0;
+}
+
+.advantage-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.advantage-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantage-title {
@@ -285,7 +323,75 @@ ul {
   color: var(--color-text);
 }
 
-/* FOOTER -------------------------- */
+.team-list-social {
+  display: flex;
+  justify-content: center;
+}
+.team-item-social {
+  width: 44px;
+  height: 44px;
+}
+.team-item-social + .team-item-social {
+  margin-left: 10px;
+}
+.team-link-social {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-svg);
+  border-radius: 50%;
+}
+.team-link-social:focus,
+.team-link-social:hover {
+  background-color: var(--color-accent);
+  color: var(--color-head);
+}
+.ourcomand-svg-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* СЕКЦИЯ 5 ПОСТОЯННЫЕ КЛИЕНТЫ ----------- */
+
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--color-accent);
+}
+.clients-link {
+  display: flex;
+  fill: #afb1b8;
+  border: 1px solid var(--color-svg);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--color-accent);
+}
+.clients-logo {
+  height: 60px;
+  width: 106px;
+}
+
+/* FOOTER (ПОДВАЛ) -------------------------- */
 
 .footer {
   padding-top: 60px;
